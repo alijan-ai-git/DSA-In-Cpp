@@ -1,2 +1,6 @@
 **.exe
 **.json
+// Ignore all log files
+*.log
+// Ignore all .gitignore files
+.gitignore
