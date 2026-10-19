@@ -27,7 +27,7 @@ int main() {
     Node *Head = rec(arr, 0, 5);
     Node *temp = Head;
     Node *prev = NULL;
-    while (temp) {
+    while (temp->Next != NULL) {
         prev = temp;
         temp = temp->Next;
     }
