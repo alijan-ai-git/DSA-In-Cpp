@@ -30,6 +30,12 @@ int main() {
     int pos;
     cout << "Enter the position of the node to delete: ";
     cin >> pos;
+
+    if (pos == 1) {
+        Node *temp = new Node(25);
+        temp->Next = Head;
+        Head = temp;
+    }
     while(--pos) {
         prev = temp;
         temp = temp->Next;
