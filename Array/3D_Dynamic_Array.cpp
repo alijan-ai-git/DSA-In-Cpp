@@ -40,8 +40,7 @@ int main()
 	}
 	
 	for (int i = 0; i < noOfTwoD; i++) {
-		for (int j = 0; j < noOfRows
-		; j++) {
+		for (int j = 0; j < noOfRows; j++) {
 			delete[] ptr[i][j];
 		}
 		delete[] ptr[i];

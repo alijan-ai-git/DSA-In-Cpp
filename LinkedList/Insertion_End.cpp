@@ -5,7 +5,7 @@ class Node
 {
     public:
         int data;
-        Node *Next;
+        Node *Next = NULL;
 };
 
 int main()
@@ -26,7 +26,6 @@ int main()
             // Create a new node and insert it at the end of the linked list
             Node *newNode = new Node;
             newNode->data = arr[i];
-            newNode->Next = NULL;
             Node *current = Head;
             while (current->Next != NULL)
             {
